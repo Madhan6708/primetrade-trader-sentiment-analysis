@@ -1,0 +1,32 @@
+
+---
+
+## 📝 1-Page Write-Up (writeup.md) – Paste This
+
+```markdown
+# Trader Behavior vs Market Sentiment — Summary
+
+## Methodology
+The Bitcoin Fear/Greed sentiment dataset was aligned with Hyperliquid trader execution data at a daily granularity. Trade-level timestamps were converted to daily dates and merged with the sentiment classification. Key performance and behavioral metrics were computed, including daily PnL per trader, win rate, trade frequency, average trade size, and long/short bias. Traders were further segmented based on activity levels and performance consistency. As a bonus, traders were clustered into behavioral archetypes using K-Means on aggregated performance and behavior features.
+
+## Key Insights
+1. **Performance differs by sentiment regime:**  
+   Traders exhibit higher average PnL and win rates during Greed regimes compared to Fear regimes. Fear regimes show higher volatility of outcomes, indicating elevated risk.
+
+2. **Trading behavior changes with sentiment:**  
+   Trade frequency and average position sizes increase during Greed regimes, reflecting higher risk appetite. During Fear regimes, traders are more cautious with lower activity.
+
+3. **Directional bias shifts with sentiment:**  
+   Traders demonstrate stronger long bias during Greed regimes, while Fear regimes are associated with relatively more defensive or short-biased positioning.
+
+4. **Trader heterogeneity matters (Bonus):**  
+   Behavioral clustering reveals distinct archetypes such as high-activity/high-volatility traders, conservative low-activity traders, and consistent performers. Consistent performers are more resilient across sentiment regimes.
+
+## Strategy Recommendations
+1. **Sentiment-Aware Risk Scaling:**  
+   Reduce position sizes and trade frequency during Fear regimes to manage downside risk. During Greed regimes, allow slightly higher exposure, particularly for historically consistent traders.
+
+2. **Regime-Based Directional Filter:**  
+   Favor long-biased or momentum strategies during Greed regimes, while tightening risk controls on long exposure and allowing defensive positioning during Fear regimes.
+
+These findings highlight the value of incorporating market sentiment as a regime filter for trader behavior analysis and risk management.
